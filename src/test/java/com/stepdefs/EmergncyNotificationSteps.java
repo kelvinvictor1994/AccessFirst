@@ -72,6 +72,7 @@ public class EmergncyNotificationSteps extends RunFeatures{
 	@And("^user clicks on submit$")
 	public void user_clicks_on_submit() {
 	    emergencynotification.clickSubmit();
+		homepage.clickHomeButton();
 	    
 	}
 	

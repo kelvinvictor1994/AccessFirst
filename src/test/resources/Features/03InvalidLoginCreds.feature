@@ -1,4 +1,4 @@
-@Regression
+@Regression5
 Feature: Test whether an invalid user is unable to login
 
   Scenario Outline: To Test if an unregisterd user gets a proper error message when logging in
@@ -9,5 +9,5 @@ Feature: Test whether an invalid user is unable to login
     Then The User must see the invalid credentials error message
 
     Examples: 
-      | username            | password |
-      | testernyu@gmail.com | Test@123 |
+      | username             | password |
+      | arjunss@qburst.com   | Test@123 |

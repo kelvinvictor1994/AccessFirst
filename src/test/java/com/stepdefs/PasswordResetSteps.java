@@ -5,12 +5,15 @@ import com.pages.PasswordHelpPage;
 import com.settings.RunFeatures;
 import com.utility.Common;
 
+import com.utility.FAMApi;
 import cucumber.api.java.en.*;
+import gherkin.lexer.Fa;
 
 public class PasswordResetSteps extends RunFeatures{
 	
 	LoginPage login = new LoginPage(driver);
 	PasswordHelpPage passwordhelp = new PasswordHelpPage(driver);
+	FAMApi fam = new FAMApi();
 
 @Given("^The user has launched the AccessFirst app$")
 public void the_user_has_launched_the_AccessFirst_app(){

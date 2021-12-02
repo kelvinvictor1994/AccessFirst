@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 28, 2021 07:28:51 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 29, 2021 04:17:57 PM</span>
 				</a>
 			</li>
 			<li>
@@ -90,7 +90,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Regression2</a></li>
+					<li><a href='#'>@Regression6</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,7 +138,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -153,7 +153,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -168,7 +168,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>19</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -187,50 +187,166 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Test login Functionality</span>
-						<span class='test-time'>Sep 28, 2021 07:28:51 PM</span>
+						<span class='test-name'>Test FAM API Integration</span>
+						<span class='test-time'>Nov 29, 2021 04:17:57 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 9s+308ms</span>
+<div class='scenario node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 11s+100ms</span>
 	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">To Test Login Functionlity with valid credentials</span>
+		<b>Scenario</b>
+		<span class="desc-text">To Test Fam Api and to send activation email to user</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given The user logs into FAM</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='4' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And The user sends an activation email</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then The user sets up a password for AccessFirst</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Test login Functionality</span>
+						<span class='test-time'>Nov 29, 2021 04:18:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='7' status='pass'>
+	<span class='duration right label'>0h 0m 18s+745ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">To Test Login Functionality with valid credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='8' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@Regression2</span>
+				<span class='category label white-text'>@Regression6</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">To Test Login Functionlity with valid credentials</span>
+			<span class="bdd-step-name">To Test Login Functionality with valid credentials</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='9' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given The User launches the app</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='5' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Enters the username as kelvin@qburst.com</span>
+					<li test-id='10' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Enters the username as testernyu@gmail.com</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='6' class='node and pass' status='pass'><b>And</b>
+					<li test-id='11' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And Enters the password as Test@123</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='7' class='node and pass' status='pass'><b>And</b>
+					<li test-id='12' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user clicks on Login button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node and pass' status='pass'><b>And</b>
+					<li test-id='13' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters a valid otp from their mail id</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user allows the permission for contacts and location</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then the user must land successfully on the Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>To Test the emergency notification submission</span>
+						<span class='test-time'>Nov 29, 2021 04:18:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='17' status='pass'>
+	<span class='duration right label'>0h 0m 15s+397ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Test Emergency Notification submission</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='18' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Regression6</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Test Emergency Notification submission</span>
+			
+				<ul class='steps'>
+					<li test-id='19' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given The user is on the Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When clicks on emergency notification</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters the patients name as Tester QA 1</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user selects patient type as Adult</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user chooses an emergency location as Manhattan and Perelman</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='24' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters patient age as 22</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='25' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters Emergency as Test Perelman emergency</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters primary contact name as Perelman Primary</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters primary contact as testernyu@gmail.com</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -291,14 +407,14 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Regression2</span>
+						<span class='category-name'>@Regression6</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label pass'>5</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
 							
 							
 						</div>
@@ -314,13 +430,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 28, 2021 07:28:51 PM</td>
-										<td class='linked' test-id='1'>Test login Functionality</td>
+										<td>Nov 29, 2021 04:17:57 PM</td>
+										<td class='linked' test-id='1'>Test FAM API Integration</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 28, 2021 07:28:51 PM</td>
-										<td class='linked' test-id='3'>Test login Functionality.To Test Login Functionlity with valid credentials.To Test Login Functionlity with valid credentials</td>
+										<td>Nov 29, 2021 04:18:08 PM</td>
+										<td class='linked' test-id='6'>Test login Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 29, 2021 04:18:08 PM</td>
+										<td class='linked' test-id='8'>Test login Functionality.To Test Login Functionality with valid credentials.To Test Login Functionality with valid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 29, 2021 04:18:27 PM</td>
+										<td class='linked' test-id='16'>To Test the emergency notification submission</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 29, 2021 04:18:27 PM</td>
+										<td class='linked' test-id='18'>To Test the emergency notification submission.Test Emergency Notification submission.Test Emergency Notification submission</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -349,37 +480,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>19</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 28, 2021 07:28:51 PM</div>
+					<div class='panel-lead'>Nov 29, 2021 04:17:57 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 28, 2021 07:29:01 PM</div>
+			 		<div class='panel-lead'>Nov 29, 2021 04:18:44 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>10,673ms</div>
+					<div class='panel-lead'>46,647ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -395,8 +526,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Regression2</td>
-							<td>2</td>
+							<td>@Regression6</td>
+							<td>5</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -416,7 +547,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 3,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -424,7 +555,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -433,7 +564,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 6,
+				passGrandChild: 19,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

@@ -42,7 +42,7 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", glue = { "com/stepdefs" }, plugin = {
-		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/AccessFirst.html" }, monochrome = true, tags = "@Regression2")
+		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/AccessFirst.html" }, monochrome = true, tags = "@Regression6")
 
 
 
@@ -95,7 +95,7 @@ public class RunFeatures {
 		//capabilities.setCapability("appActivity", appActivityvalue);
 		//capabilities.setCapability("avd", avdvalue);
 		
-		//appiumserver.startServer();
+		appiumserver.startServer();
 		driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub") ,capabilities);
 			
 	}
@@ -103,7 +103,7 @@ public class RunFeatures {
 	@AfterClass
 	public static void DriverTearDown() {
 		driver.quit();
-		//appiumserver.stopServer();
+		appiumserver.stopServer();
 		String userdir = System.getProperty("user.dir");
 		Reporter.loadXMLConfig(userdir+"/configs/extent-config.xml");
 		

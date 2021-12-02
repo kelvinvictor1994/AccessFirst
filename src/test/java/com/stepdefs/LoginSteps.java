@@ -6,6 +6,8 @@ import com.pages.OtpValidationPage;
 import com.pages.PasswordHelpPage;
 import com.settings.RunFeatures;
 
+import com.utility.EmailUtility;
+import com.utility.FAMApi;
 import cucumber.api.java.en.*;
 
 public class LoginSteps extends RunFeatures{
@@ -13,7 +15,7 @@ public class LoginSteps extends RunFeatures{
 	PasswordHelpPage passwordhelp = new PasswordHelpPage(driver);
 	Homepage homepage = new Homepage(driver);
 	OtpValidationPage otp = new OtpValidationPage(driver);
-	
+
 	@Given("^The User launches the app$")
 	public void the_User_launches_the_app() {
 		login.AccessFirstLogoispresent();
@@ -39,10 +41,9 @@ public class LoginSteps extends RunFeatures{
 	    
 	}
 	
-	@And("^user enter a valit otp from theor mail id$")
-	public void user_enter_a_valit_otp_from_theor_mail_id() throws Exception{
+	@And("^user enters a valid otp from their mail id$")
+	public void user_enters_a_valid_otp_from_their_mail_id() throws Exception{
 	    otp.enterOtp();
-	    
 	}
 	
 	@And("^user allows the permission for contacts and location$")
@@ -52,7 +53,12 @@ public class LoginSteps extends RunFeatures{
 	
 	@Then("^the user must land successfully on the Homepage$")
 	public void the_user_must_land_successfully_on_the_Homepage() {
-	    homepage.homePageisDisplayed();
+		homepage.homePageisDisplayed();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

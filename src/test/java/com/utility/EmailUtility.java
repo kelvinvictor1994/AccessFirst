@@ -29,8 +29,10 @@ public class EmailUtility {
 		  email.setSSLOnConnect(true);
 		  email.setFrom(PropertyReader.properyReader("Frommailid"));
 		  email.setSubject(PropertyReader.properyReader("MailSubject"));
-		  email.addTo(PropertyReader.properyReader("Tomailid"));
-		  email.setHtmlMsg("<div style='font-size: 20px; color: black;'>Automation Test Report for AccessFirst 2.0</div>");
+		  String to = PropertyReader.properyReader("Tomailid");
+		  email.addTo(to.split(","));
+
+			email.setHtmlMsg("<div style='font-size: 20px; color: black;'>Automation Test Report for AccessFirst 2.0</div>");
 
 		  EmailAttachment attachment = new EmailAttachment();
 		  String userdir = System.getProperty("user.dir");
@@ -89,7 +91,7 @@ public class EmailUtility {
 			String[] sa = content.split("<b>");
 			  String otpsplit = sa[1];
 			  String otp = otpsplit.substring(0, 10);	
-			  //System.out.println(otp);
+			  System.out.println(otp);
 			
 		folderInbox.close(false);
 		store.close();

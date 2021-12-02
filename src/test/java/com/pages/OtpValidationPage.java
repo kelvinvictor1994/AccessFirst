@@ -1,5 +1,6 @@
 package com.pages;
 
+import com.utility.Common;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,6 +15,7 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class OtpValidationPage extends RunFeatures{
 	
 	EmailUtility email = new EmailUtility();
+	Common common = new Common();
 
 	@iOSXCUITFindBy(id = "txt_email")
 	private MobileElement otpTextField;
@@ -26,7 +28,7 @@ public class OtpValidationPage extends RunFeatures{
 	}
 	
 	public void enterOtp() throws Exception {
-
+		common.explicitWait_Clickable(otpTextField,10);
 		otpTextField.click();
 		otpTextField.clear();
 		String otp = email.searchEmails();

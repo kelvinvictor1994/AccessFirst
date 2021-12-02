@@ -72,10 +72,10 @@ public class LoginPage extends RunFeatures{
 	}
 	
 	public void allowPermissions() {
-		common.explicitWait_Displayed(locationallowbtn, 10);
-		locationallowbtn.click();
-		common.explicitWait_Displayed(Contactsallowbtn, 10);
-		Contactsallowbtn.click();
+			common.explicitWait_Displayed(locationallowbtn, 10);
+			locationallowbtn.click();
+			common.explicitWait_Displayed(Contactsallowbtn, 10);
+			Contactsallowbtn.click();
 	}
 	
 	public void invalidUserMsgDisplayed() {

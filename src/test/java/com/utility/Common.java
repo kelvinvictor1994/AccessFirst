@@ -9,9 +9,9 @@ import io.appium.java_client.MobileElement;
 
 public class Common extends RunFeatures {
 	
-	public static void simpleWait(int sec) {
+	public static void simpleWait(int millisec) {
 		try {
-			Thread.sleep(sec);
+			Thread.sleep(millisec);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

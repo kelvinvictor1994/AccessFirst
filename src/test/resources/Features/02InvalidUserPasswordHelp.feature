@@ -1,4 +1,4 @@
-@Regression
+@Regression5
 Feature: Test Password Help feature for an invalid user
 
   Scenario Outline: To Test Invalid users get proper error message during Password reset
@@ -9,5 +9,5 @@ Feature: Test Password Help feature for an invalid user
     Then the User must get a proper error message
 
     Examples: 
-      | emailid             |
-      | testernyu@gmail.com |
+      | emailid            |
+      | arjunss@qburst.com |
