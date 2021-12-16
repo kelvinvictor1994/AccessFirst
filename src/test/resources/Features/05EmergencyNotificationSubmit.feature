@@ -17,7 +17,7 @@ Feature: To Test the emergency notification submission
     Examples: 
       | Patient Name  | Patient Type | City        | Location              | Patient Age | Patient Emergency       | Primary ContactName | Primary Contact     |
       | Tester QA 1   | Adult        | Manhattan   | Perelman              |          22 | Test Perelman emergency | Perelman Primary    | testernyu@gmail.com |
-#      | Tester QA 2   | Adult        | Manhattan   | Samuels               |          23 | Test Samuels emergency  | Samuels Primary     | testernyu@gmail.com |
+      | Tester QA 2   | Adult        | Manhattan   | Samuels               |          23 | Test Samuels emergency  | Samuels Primary     | testernyu@gmail.com |
 #      | Tester QA 3   | Adult        | Brooklyn    | Emergency Brooklyn    |          24 | Test Brooklyn emergency | Brooklyn Primary    | testernyu@gmail.com |
 #      | Tester QA 4   | Adult        | Brooklyn    | Cobble Hill           |          25 | Test Cobble emergency   | Cobble Primary      | testernyu@gmail.com |
 #      | Tester QA 5   | Adult        | Long Island | Emergency Long Island |          26 | Test LI emergency       | LI Primary          | testernyu@gmail.com |

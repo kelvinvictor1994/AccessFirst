@@ -1,14 +1,9 @@
 package com.pages;
 
-import java.io.IOException;
-
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.settings.RunFeatures;
 import com.utility.Common;
-import com.utility.ExcelUtility;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -17,7 +12,6 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class EmergencyNotificationPage extends RunFeatures{
 	
-	ExcelUtility excel = new ExcelUtility();
 	Common common = new Common();
 	
 	@iOSXCUITFindBy(id = "Patient's name_textField")

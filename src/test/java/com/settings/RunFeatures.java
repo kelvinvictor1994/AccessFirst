@@ -1,16 +1,11 @@
 package com.settings;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.ServerSocket;
 import java.net.URL;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.cucumber.listener.Reporter;
@@ -19,7 +14,6 @@ import com.cucumber.listener.Reporter;
 //import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 import com.utility.AppiumServerInitiallization;
 import com.utility.EmailUtility;
-import com.utility.ExcelUtility;
 import com.utility.PropertyReader;
 
 import cucumber.api.junit.Cucumber;
@@ -28,7 +22,6 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 
 //@RunWith(ExtendedCucumber.class)
@@ -57,7 +50,6 @@ public class RunFeatures {
 	
 	static PropertyReader prop = new PropertyReader();
 	static EmailUtility email = new EmailUtility();
-	static ExcelUtility excel = new ExcelUtility();
 	static AppiumServerInitiallization appiumserver = new AppiumServerInitiallization();
 	
 		
