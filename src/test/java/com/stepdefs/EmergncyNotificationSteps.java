@@ -2,7 +2,7 @@ package com.stepdefs;
 
 import com.pages.EmergencyNotificationPage;
 import com.pages.Homepage;
-import com.pages.NotificationSubmit;
+import com.pages.NotificationSubmitPage;
 import com.settings.RunFeatures;
 
 import cucumber.api.java.en.*;
@@ -12,7 +12,7 @@ public class EmergncyNotificationSteps extends RunFeatures{
 	
 	Homepage homepage = new Homepage(driver);
 	EmergencyNotificationPage emergencynotification = new EmergencyNotificationPage(driver);
-	NotificationSubmit submitnotification = new NotificationSubmit(driver);
+	NotificationSubmitPage submitnotification = new NotificationSubmitPage(driver);
 	
 	@SuppressWarnings("deprecation")
 	@Given("^The user is on the Homepage$")
@@ -72,14 +72,16 @@ public class EmergncyNotificationSteps extends RunFeatures{
 	@And("^user clicks on submit$")
 	public void user_clicks_on_submit() {
 	    emergencynotification.clickSubmit();
-		homepage.clickHomeButton();
+		//homepage.clickHomeButton();
 	    
 	}
 	
-	@Then("^user must land on Notification successfully submitted page$")
-	public void user_lands_on_successfull_notification_submission_page() {
-		submitnotification.verifyPrepareVisit();
-	    homepage.clickHomeButton();
+	@Then("^user must land on Notification successfully submitted page (.*)$")
+	public void user_lands_on_successfull_notification_submission_page(String Location) {
+		submitnotification.AccessFirstLogoispresent();
+		submitnotification.verifyViewLocationGetDirection();
+		submitnotification.getLocationName(Location);
+	    //homepage.clickHomeButton();
 	}
 
 }

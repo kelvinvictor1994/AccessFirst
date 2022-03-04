@@ -60,7 +60,8 @@ public class RunFeatures {
 	public static String appPathvalue = prop.properyReader("appPath");
 	public static String appPackagevalue = prop.properyReader("appPackage");
 	public static String appActivityvalue = prop.properyReader("appActivity");
-	public static String avdvalue = prop.properyReader("simulatorName");		
+	public static String avdvalue = prop.properyReader("simulatorName");
+	//public static String waitForQuiescence  = "false";
 	
 	public static void main(String[] args) {
 		JUnitCore runner = new JUnitCore();
@@ -79,6 +80,7 @@ public class RunFeatures {
 		capabilities.setCapability("noReset", false);
 		//capabilities.setCapability("locationServicesEnabled", true);
 		capabilities.setCapability("locationServicesAuthorized", true);
+		//capabilities.setCapability("waitForQuiescence","false");
 		
 		
 		String userdir = System.getProperty("user.dir");
@@ -87,15 +89,16 @@ public class RunFeatures {
 		//capabilities.setCapability("appActivity", appActivityvalue);
 		//capabilities.setCapability("avd", avdvalue);
 		
-		appiumserver.startServer();
+		//appiumserver.startServer();
 		driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub") ,capabilities);
-			
+
+
 	}
 
 	@AfterClass
 	public static void DriverTearDown() {
 		driver.quit();
-		appiumserver.stopServer();
+		//appiumserver.stopServer();
 		String userdir = System.getProperty("user.dir");
 		Reporter.loadXMLConfig(userdir+"/configs/extent-config.xml");
 		

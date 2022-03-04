@@ -27,7 +27,7 @@ public class LoginPage extends RunFeatures{
 	@iOSXCUITFindBy(id = "txt_password")
 	private MobileElement passwordfield;
 	
-	@iOSXCUITFindBy(id = "Allow While Using App")
+	@iOSXCUITFindBy(id = "Allow Once")
 	private MobileElement locationallowbtn;
 	
 	@iOSXCUITFindBy(id = "OK")

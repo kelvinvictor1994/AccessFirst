@@ -1,4 +1,4 @@
-@Regression5
+@Regression
 Feature: Test whether an invalid user is unable to login
 
   Scenario Outline: To Test if an unregisterd user gets a proper error message when logging in
