@@ -61,8 +61,7 @@ public class RunFeatures {
 	public static String appPackagevalue = prop.properyReader("appPackage");
 	public static String appActivityvalue = prop.properyReader("appActivity");
 	public static String avdvalue = prop.properyReader("simulatorName");
-	//public static String waitForQuiescence  = "false";
-	
+
 	public static void main(String[] args) {
 		JUnitCore runner = new JUnitCore();
 		runner.run(com.settings.RunFeatures.class);
@@ -85,11 +84,9 @@ public class RunFeatures {
 		
 		String userdir = System.getProperty("user.dir");
 		capabilities.setCapability("app", userdir+appPathvalue);
-		//capabilities.setCapability("appPackage", appPackagevalue);
-		//capabilities.setCapability("appActivity", appActivityvalue);
-		//capabilities.setCapability("avd", avdvalue);
+
 		
-		//appiumserver.startServer();
+		appiumserver.startServer();
 		driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub") ,capabilities);
 
 
@@ -98,7 +95,7 @@ public class RunFeatures {
 	@AfterClass
 	public static void DriverTearDown() {
 		driver.quit();
-		//appiumserver.stopServer();
+		appiumserver.stopServer();
 		String userdir = System.getProperty("user.dir");
 		Reporter.loadXMLConfig(userdir+"/configs/extent-config.xml");
 		
