@@ -26,13 +26,6 @@ public class NotificationSubmitPage extends RunFeatures{
 	@iOSXCUITFindBy(id = "hospitalName")
 	private MobileElement locationName;
 
-	@iOSXCUITFindBy(iOSNsPredicate = "type == 'XCUIElementTypeStaticText' AND label CONTAINS[c] 'success_msg'")
-	private MobileElement staticLocationName;
-	//label == "success_msg" AND name == "hospitalName"
-
-	public final By sometext = MobileBy.AccessibilityId("hospitalName");
-
-
 	public NotificationSubmitPage(AppiumDriver<MobileElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
@@ -49,7 +42,7 @@ public class NotificationSubmitPage extends RunFeatures{
 		}*/
 
 	public void AccessFirstLogoispresent() {
-		//Common.explicitWait_Displayed(accessFirstIcon,10);
+		Common.explicitWait_Displayed(accessFirstIcon,10);
 		accessFirstIcon.isDisplayed();
 	}
 
@@ -66,12 +59,13 @@ public class NotificationSubmitPage extends RunFeatures{
 
 	public boolean getLocationName(String Location) {
 
-		String text = driver.findElement(sometext).getText();
 
+		String locName = locationName.getText();
 		//String locName = staticLocationName.getText();
 
-		System.out.println(text);
-		return text.contains(Location);
+		System.out.println("in app location is "+locName);
+		System.out.println("feature file location is "+Location);
+		return locName.equals(Location);
 	}
-	
+
 }

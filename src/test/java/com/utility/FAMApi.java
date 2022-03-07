@@ -32,15 +32,17 @@ public class FAMApi {
                 //.config(RestAssured.config.encoderConfig(encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false)))
                 //.contentType("application/x-www-form-urlencoded")
                 .formParam("userId", "Leadership01")
-                .formParam("password", "Super2021mcitSafe01")
+                .formParam("password", "Super2022mcitSafe01")
                 .when()
-                .post("http://jvwlcdcqvm001.nyumc.org:8080/fam/login.html");
+                .post("https://app-qa.nyumc.org/fam/login.html");
+                //.post("http://jvwlcdcqvm001.nyumc.org:8080/fam/login.html");
 
         Response response2 = RestAssured
                 .given()
                 .cookie("JSESSIONID", response.getCookie("JSESSIONID"))
                 .when()
-                .get("http://jvwlcdcqvm001.nyumc.org:8080/fam/authorize.html");
+                .get("https://app-qa.nyumc.org/fam/authorize.html");
+                //.get("http://jvwlcdcqvm001.nyumc.org:8080/fam/authorize.html");
 
         //System.out.println(response.getHeaders());
         System.out.println("Fam login code -"+response.getStatusCode());
@@ -55,31 +57,36 @@ public class FAMApi {
                 .contentType("text/html;charset=UTF-8")
                 .sessionId(sessionID)
                 .when()
-                .get("http://jvwlcdcqvm001.nyumc.org:8080/fam/logout.html");
+                .get("https://app-qa.nyumc.org/fam/logout.html");
+                //.get("http://jvwlcdcqvm001.nyumc.org:8080/fam/logout.html");
         System.out.println("logout code -"+response.getStatusCode());
     }
     public void sendActivationLink(String sessionID){
         Response response = RestAssured.given()
                 .contentType("application/x-www-form-urlencoded")
+                .formParam("member_id", "180951")
                 .formParam("member_id", "178936")
                 .formParam("email", "testernyu@gmail.com")
                 .formParam("myaction", "send link")
                 //.header("cookie","JSESSIONID=E4CE2A603AAD648331FDDD7E15556CF3.webappdev-jvwlcdcqvm001")
                 //.cookie("JSESSIONID",sessionID)
                 .sessionId(sessionID)
-                .post("http://jvwlcdcqvm001.nyumc.org:8080/fam/af_activation.html");
+                .post("https://app-qa.nyumc.org/fam/af_activation.html");
+                //.post("http://jvwlcdcqvm001.nyumc.org:8080/fam/af_activation.html");
         System.out.println("send activation code -"+response.getStatusCode());
     }
 
     public static void disableMember(String sessionID){
         Response response = RestAssured.given()
                 .contentType("application/x-www-form-urlencoded; charset=utf-8")
-                .formParam("member_id", "178936")
+                .formParam("member_id", "180951")
+                //.formParam("member_id", "178936")
                 .formParam("email", "testernyu@gmail.com")
                 //.cookie("JSESSIONID="+JSessionID)
                 .formParam("myaction", "disable")
                 .sessionId(sessionID)
-                .post("http://jvwlcdcqvm001.nyumc.org:8080/fam/af_disable.html");
+                .post("https://app-qa.nyumc.org/fam/af_disable.html");
+                //.post("http://jvwlcdcqvm001.nyumc.org:8080/fam/af_disable.html");
         System.out.println("Disable member code -"+response.getStatusCode());
     }
     public static void createPassword(){
@@ -87,7 +94,8 @@ public class FAMApi {
                 .contentType("application/x-www-form-urlencoded; charset=utf-8")
                 .formParam("MIME Type", "application/x-www-form-urlencoded")
                 .formParam("userName", "testernyu@gmail.com")
-                .formParam("userId", "178936")
+                .formParam("userId", "180951")
+                //.formParam("userId", "178936")
                 .formParam("password", "Test@123")
                 .formParam("confirmPassword", "Test@123")
                 //.cookie("JESSIONID",cookie)

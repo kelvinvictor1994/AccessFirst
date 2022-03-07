@@ -12,6 +12,7 @@ import javax.mail.internet.MimeMultipart;
 import javax.mail.search.SearchTerm;
 import javax.mail.search.SubjectTerm;
 
+import com.sun.mail.imap.IMAPBodyPart;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;
@@ -68,22 +69,23 @@ public class EmailUtility {
 		folderInbox.open(Folder.READ_ONLY);
 		
 		SearchTerm search = new SubjectTerm(subject);
-
 		Message[] foundmsg = folderInbox.search(search);
-		
 			Message message = foundmsg[foundmsg.length-1];
-			String type = message.getContentType();
+			String messagetype = message.getContentType();
+			//System.out.println(messagetype);
 			//System.out.println(message.getContent());
-			if(type.contains("multipart/MIXED"))
+			if(messagetype.contains("multipart/MIXED"))
 					{
 			Multipart multipart = (Multipart) message.getContent();
+			//int count = multipart.getCount();
+			//System.out.println(count);
 			BodyPart bodypart = multipart.getBodyPart(0);
 			//System.out.println(bodypart.getContentType());
-			
+
 			MimeMultipart mimemultipart = (MimeMultipart) bodypart.getContent();
-			BodyPart bodypart2 = mimemultipart.getBodyPart(0);
+
+						BodyPart bodypart2 = mimemultipart.getBodyPart(0);
 			content = (String) bodypart2.getContent();
-			//System.out.println(content);
 					}
 			else {
 			content = (String) message.getContent();
@@ -91,7 +93,7 @@ public class EmailUtility {
 			String[] sa = content.split("<b>");
 			  String otpsplit = sa[1];
 			  String otp = otpsplit.substring(0, 10);	
-			  System.out.println(otp);
+			  //System.out.println(otp);
 			
 		folderInbox.close(false);
 		store.close();

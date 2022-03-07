@@ -1,4 +1,4 @@
-@Regression
+@Regression6
 Feature: Test FAM API Integration
 
   Scenario: To Test Fam Api and to send activation email to user

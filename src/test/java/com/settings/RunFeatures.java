@@ -35,7 +35,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", glue = { "com/stepdefs" }, plugin = {
-		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/AccessFirst.html" }, monochrome = true, tags = "@Regression6")
+		"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/AccessFirst.html" }, monochrome = true, tags = "@Regression7")
 
 
 

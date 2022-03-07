@@ -1,4 +1,4 @@
-@Regression6
+@Regression7
 Feature: Test login Functionality
 
   Scenario Outline: To Test Login Functionality with valid credentials
@@ -6,7 +6,7 @@ Feature: Test login Functionality
     And Enters the username as <username>
     And Enters the password as <password>
     And user clicks on Login button
-#     And user enters a valid otp from their mail id
+#    And user enters a valid otp from their mail id
     And user allows the permission for contacts and location
     Then the user must land successfully on the Homepage
 

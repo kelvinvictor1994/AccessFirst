@@ -116,7 +116,7 @@ public class EmergencyNotificationPage extends RunFeatures{
 	}
 	
 	public void Locationclick(String LocationName) {
-		if(LocationName.equals("Perelman"))
+		if(LocationName.equals("Ronald O. Perelman Center for Emergency Services"))
 		{
 		common.explicitWait_Clickable(Perelmanlocation, 10);
 		Perelmanlocation.click();

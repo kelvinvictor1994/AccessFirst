@@ -78,10 +78,11 @@ public class EmergncyNotificationSteps extends RunFeatures{
 	
 	@Then("^user must land on Notification successfully submitted page (.*)$")
 	public void user_lands_on_successfull_notification_submission_page(String Location) {
-		submitnotification.AccessFirstLogoispresent();
-		submitnotification.verifyViewLocationGetDirection();
+		//submitnotification.AccessFirstLogoispresent();
 		submitnotification.getLocationName(Location);
-	    //homepage.clickHomeButton();
+		submitnotification.verifyViewLocationGetDirection();
+
+	    homepage.clickHomeButton();
 	}
 
 }

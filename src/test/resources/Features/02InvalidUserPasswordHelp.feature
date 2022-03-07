@@ -1,4 +1,4 @@
-@Regression
+@Regression5
 Feature: Test Password Help feature for an invalid user
 
   Scenario Outline: To Test Invalid users get proper error message during Password reset

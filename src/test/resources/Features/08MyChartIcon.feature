@@ -1,4 +1,4 @@
-@Regression5
+@Regression6
 Feature: Test MyChart navigation icon is present
 
   Scenario: To test if the Mychart Icon is available
