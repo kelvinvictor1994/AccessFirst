@@ -1,4 +1,4 @@
-@Regression6
+@Regression7
 Feature: Test Hospital to Hospital transfer
 
   Scenario: To test if we can perform hospital transfer

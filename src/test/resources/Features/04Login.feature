@@ -1,4 +1,4 @@
-@Regression7
+@Regression2
 Feature: Test login Functionality
 
   Scenario Outline: To Test Login Functionality with valid credentials

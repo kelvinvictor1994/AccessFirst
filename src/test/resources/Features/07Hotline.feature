@@ -1,4 +1,4 @@
-@Regression6
+@Regression7
 Feature: Test if Trustee HotLine option is present
 
   Scenario: To verify if Hotline number option is present

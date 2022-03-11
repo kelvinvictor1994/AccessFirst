@@ -121,27 +121,27 @@ public class EmergencyNotificationPage extends RunFeatures{
 		common.explicitWait_Clickable(Perelmanlocation, 10);
 		Perelmanlocation.click();
 		}
-		else if(LocationName.equals("Samuels"))
+		else if(LocationName.equals("Samuels Orthopedic Immediate Care Center"))
 		{
 			common.explicitWait_Clickable(SamuelsLocation, 10);
 			SamuelsLocation.click();
 		}
-		else if(LocationName.equals("KiDS Emergency"))
+		else if(LocationName.equals("KiDS Emergency Department"))
 		{
 			common.explicitWait_Clickable(KidsEmergencyDeptLocation, 10);
 			KidsEmergencyDeptLocation.click();
 		}
-		else if(LocationName.equals("Emergency Brooklyn"))
+		else if(LocationName.equals("Emergency Department at NYU Langone Hospital—Brooklyn"))
 		{
 			common.explicitWait_Clickable(EmergencyDeptBrooklynLocation, 10);
 			EmergencyDeptBrooklynLocation.click();
 		}
-		else if(LocationName.equals("Cobble Hill"))
+		else if(LocationName.equals("NYU Langone Health—Cobble Hill"))
 		{
 			common.explicitWait_Clickable(CobbleHillLocation, 10);
 			CobbleHillLocation.click();
 		}
-		else if(LocationName.equals("Emergency Long Island"))
+		else if(LocationName.equals("Emergency Department at NYU Langone Hospital—Long Island"))
 		{
 			common.explicitWait_Clickable(EmergencyDeptLILocation, 10);
 			EmergencyDeptLILocation.click();

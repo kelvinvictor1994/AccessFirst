@@ -15,14 +15,14 @@ Feature: To Test the emergency notification submission
     Then user must land on Notification successfully submitted page <Location>
 
     Examples: 
-      | Patient Name  | Patient Type | City        | Location                                               | Patient Age | Patient Emergency       | Primary ContactName | Primary Contact     |
-      | Tester QA 1   | Adult        | Manhattan   | Ronald O. Perelman Center for Emergency Services       |          22 | Test Perelman emergency | Perelman Primary    | testernyu@gmail.com |
-#      | Tester QA 2   | Adult        | Manhattan   | Samuels               |          23 | Test Samuels emergency  | Samuels Primary     | testernyu@gmail.com |
-#      | Tester QA 3   | Adult        | Brooklyn    | Emergency Brooklyn    |          24 | Test Brooklyn emergency | Brooklyn Primary    | testernyu@gmail.com |
-#      | Tester QA 4   | Adult        | Brooklyn    | Cobble Hill           |          25 | Test Cobble emergency   | Cobble Primary      | testernyu@gmail.com |
-#      | Tester QA 5   | Adult        | Long Island | Emergency Long Island |          26 | Test LI emergency       | LI Primary          | testernyu@gmail.com |
-#      | Tester QA 6   | Pedatric     | Manhattan   | KiDS Emergency        |          2  | Test kids emergency     | Kids Primary        | testernyu@gmail.com |
-#      | Tester QA 7   | Pedatric     | Manhattan   | Samuels               |          3  | Test Samuels emergency  | Samuels Primary     | testernyu@gmail.com |
-#      | Tester QA 8   | Pedatric     | Brooklyn    | Emergency Brooklyn    |          4  | Test Brooklyn emergency | Brooklyn Primary    | testernyu@gmail.com |
-#      | Tester QA 9   | Pedatric     | Brooklyn    | Cobble Hill           |          5  | Test Cobble emergency   | Cobble Primary      | testernyu@gmail.com |
-#      | Tester QA 10  | Pedatric     | Long Island | Emergency Long Island |          6  | Test LI emergency       | LI Primary          | testernyu@gmail.com |
+      | Patient Name  | Patient Type | City        | Location                                                | Patient Age | Patient Emergency       | Primary ContactName | Primary Contact     |
+      | Tester QA 1   | Adult        | Manhattan   | Ronald O. Perelman Center for Emergency Services        |          22 | Test Perelman emergency | Perelman Primary    | testernyu@gmail.com |
+      | Tester QA 2   | Adult        | Manhattan   | Samuels Orthopedic Immediate Care Center                |          23 | Test Samuels emergency  | Samuels Primary     | testernyu@gmail.com |
+      | Tester QA 3   | Adult        | Brooklyn    | Emergency Department at NYU Langone Hospital—Brooklyn   |          24 | Test Brooklyn emergency | Brooklyn Primary    | testernyu@gmail.com |
+      | Tester QA 4   | Adult        | Brooklyn    | NYU Langone Health—Cobble Hill                          |          25 | Test Cobble emergency   | Cobble Primary      | testernyu@gmail.com |
+      | Tester QA 5   | Adult        | Long Island | Emergency Department at NYU Langone Hospital—Long Island|          26 | Test LI emergency       | LI Primary          | testernyu@gmail.com |
+      | Tester QA 6   | Pedatric     | Manhattan   | KiDS Emergency Department                               |          2  | Test kids emergency     | Kids Primary        | testernyu@gmail.com |
+      | Tester QA 7   | Pedatric     | Manhattan   | Samuels Orthopedic Immediate Care Center                |          3  | Test Samuels emergency  | Samuels Primary     | testernyu@gmail.com |
+      | Tester QA 8   | Pedatric     | Brooklyn    | Emergency Department at NYU Langone Hospital—Brooklyn   |          4  | Test Brooklyn emergency | Brooklyn Primary    | testernyu@gmail.com |
+      | Tester QA 9   | Pedatric     | Brooklyn    | NYU Langone Health—Cobble Hill                          |          5  | Test Cobble emergency   | Cobble Primary      | testernyu@gmail.com |
+      | Tester QA 10  | Pedatric     | Long Island | Emergency Department at NYU Langone Hospital—Long Island|          6  | Test LI emergency       | LI Primary          | testernyu@gmail.com |

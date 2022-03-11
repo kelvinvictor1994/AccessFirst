@@ -1,4 +1,4 @@
-@Regression5
+@Regression7
 Feature: Test Password Help Functionality
 
   Scenario Outline: Test Password reset
