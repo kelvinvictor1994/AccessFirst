@@ -1,4 +1,5 @@
-@Regression7
+@Regression
+
 Feature: To Test the emergency notification submission
 
   Scenario Outline: Test Emergency Notification submission 

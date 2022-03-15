@@ -5,6 +5,7 @@ import com.pages.Homepage;
 import com.pages.NotificationSubmitPage;
 import com.settings.RunFeatures;
 
+import com.utility.Common;
 import cucumber.api.java.en.*;
 import junit.framework.Assert;
 
@@ -78,9 +79,12 @@ public class EmergncyNotificationSteps extends RunFeatures{
 	
 	@Then("^user must land on Notification successfully submitted page (.*)$")
 	public void user_lands_on_successfull_notification_submission_page(String Location) {
+
 		//submitnotification.AccessFirstLogoispresent();
-		submitnotification.getLocationName(Location);
+		//Common.simpleWait(2000);
 		submitnotification.verifyViewLocationGetDirection();
+		submitnotification.getLocationName(Location);
+
 
 	    homepage.clickHomeButton();
 	}

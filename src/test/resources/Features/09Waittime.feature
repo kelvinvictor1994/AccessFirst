@@ -1,4 +1,5 @@
-@Regression2
+@Regression
+
 Feature: Test wait times with wait time API's
 
   Scenario: To Test wait time API

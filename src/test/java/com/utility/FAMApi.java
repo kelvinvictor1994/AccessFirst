@@ -93,7 +93,7 @@ public class FAMApi {
                 .formParam("password", "Test@123")
                 .formParam("confirmPassword", "Test@123")
                 //.cookie("JESSIONID",cookie)
-                .post("https://app-qa.nyumc.org/accessfirst/submitcreatepassword");
+                .post("https://app-qa.nyumc.org/accessfirstv2/submitcreatepassword");
         System.out.println("Create password code -"+response.getStatusCode());
     }
 

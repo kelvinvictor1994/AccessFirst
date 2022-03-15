@@ -93,7 +93,7 @@ public class EmailUtility {
 			String[] sa = content.split("<b>");
 			  String otpsplit = sa[1];
 			  String otp = otpsplit.substring(0, 10);	
-			  //System.out.println(otp);
+			   System.out.println(otp);
 			
 		folderInbox.close(false);
 		store.close();

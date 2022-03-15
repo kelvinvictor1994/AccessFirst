@@ -63,8 +63,8 @@ public class NotificationSubmitPage extends RunFeatures{
 		String locName = locationName.getText();
 		//String locName = staticLocationName.getText();
 
-		System.out.println("in app location is "+locName);
-		System.out.println("feature file location is "+Location);
+		//System.out.println("in app location is "+locName);
+		//System.out.println("feature file location is "+Location);
 		return locName.equals(Location);
 	}
 
