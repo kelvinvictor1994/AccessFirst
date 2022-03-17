@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 15, 2022 03:46:33 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 17, 2022 03:20:56 PM</span>
 				</a>
 			</li>
 			<li>
@@ -90,7 +90,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Regression1</a></li>
+					<li><a href='#'>@Regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -138,7 +138,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -153,7 +153,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -168,7 +168,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>46</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -188,12 +188,12 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Test FAM API Integration</span>
-						<span class='test-time'>Mar 15, 2022 03:46:33 PM</span>
+						<span class='test-time'>Mar 17, 2022 03:20:56 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 12s+307ms</span>
+	<span class='duration right label'>0h 0m 10s+631ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">To Test Fam Api and to send activation email to user</span>
@@ -231,21 +231,177 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>Test login Functionality</span>
-						<span class='test-time'>Mar 15, 2022 03:46:45 PM</span>
+						<span class='test-name'>Test Password Help Functionality</span>
+						<span class='test-time'>Mar 17, 2022 03:21:07 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='7' status='pass'>
-	<span class='duration right label'>0h 0m 21s+720ms</span>
+	<span class='duration right label'>0h 0m 15s+453ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Test Password reset</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='8' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Test Password reset</span>
+			
+				<ul class='steps'>
+					<li test-id='9' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given The user has launched the AccessFirst app</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When user clicks on Password Help</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='11' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters the email address kelvin@qburst.com</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And clicks on submit</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user gets a success message about their password reset</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Test Password Help feature for an invalid user</span>
+						<span class='test-time'>Mar 17, 2022 03:21:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='15' status='pass'>
+	<span class='duration right label'>0h 0m 4s+482ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">To Test Invalid users get proper error message during Password reset</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='16' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">To Test Invalid users get proper error message during Password reset</span>
+			
+				<ul class='steps'>
+					<li test-id='17' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given The user is on the AccessFirst Login Page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='18' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When user clicks on Password Help option</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='19' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters email address as arjunss@qburst.com</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And clicks on submit button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then the User must get a proper error message</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Test whether an invalid user is unable to login</span>
+						<span class='test-time'>Mar 17, 2022 03:21:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='23' status='pass'>
+	<span class='duration right label'>0h 0m 3s+853ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">To Test if an unregisterd user gets a proper error message when logging in</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='24' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">To Test if an unregisterd user gets a proper error message when logging in</span>
+			
+				<ul class='steps'>
+					<li test-id='25' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given The User has launched the app</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Enters the userid as arjunss@qburst.com</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Enters password as Test@123</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And clicks on Login button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then The User must see the invalid credentials error message</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>Test login Functionality</span>
+						<span class='test-time'>Mar 17, 2022 03:21:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='31' status='pass'>
+	<span class='duration right label'>0h 0m 23s+181ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">To Test Login Functionality with valid credentials</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='8' class='node scenario pass' status='pass'>
+		<li test-id='32' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@Regression1</span>
+				<span class='category label white-text'>@Regression</span>
 			</div>
 			
 			<b>Scenario</b>
@@ -253,35 +409,271 @@
 			<span class="bdd-step-name">To Test Login Functionality with valid credentials</span>
 			
 				<ul class='steps'>
-					<li test-id='9' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='33' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given The User launches the app</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node and pass' status='pass'><b>And</b>
+					<li test-id='34' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And Enters the username as testernyu@gmail.com</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='11' class='node and pass' status='pass'><b>And</b>
+					<li test-id='35' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And Enters the password as Test@123</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='12' class='node and pass' status='pass'><b>And</b>
+					<li test-id='36' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user clicks on Login button</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='13' class='node and pass' status='pass'><b>And</b>
+					<li test-id='37' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user enters a valid otp from their mail id</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='14' class='node and pass' status='pass'><b>And</b>
+					<li test-id='38' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And user allows the permission for contacts and location</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='39' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then the user must land successfully on the Homepage</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>To Test the emergency notification submission</span>
+						<span class='test-time'>Mar 17, 2022 03:21:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='41' status='pass'>
+	<span class='duration right label'>0h 0m 18s+399ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Test Emergency Notification submission</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='42' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Test Emergency Notification submission</span>
+			
+				<ul class='steps'>
+					<li test-id='43' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given The user is on the Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='44' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When clicks on emergency notification</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='45' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters the patients name as Tester QA 1</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='46' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user selects patient type as Adult</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='47' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user chooses an emergency location as Manhattan and Ronald O. Perelman Center for Emergency Services</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='48' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters patient age as 22</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='49' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters Emergency as Test Perelman emergency</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='50' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters primary contact name as Perelman Primary</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='51' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user enters primary contact as testernyu@gmail.com</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='52' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user clicks on submit</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='53' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then user must land on Notification successfully submitted page Ronald O. Perelman Center for Emergency Services</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='54'>
+					<div class='test-heading'>
+						<span class='test-name'>Test Hospital to Hospital transfer</span>
+						<span class='test-time'>Mar 17, 2022 03:22:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='55' status='pass'>
+	<span class='duration right label'>0h 0m 1s+690ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">To test if we can perform hospital transfer</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='56' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given The user is on Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And The user clicks on Hospital transfer option</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='58' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then The user must land on Successfull transfer page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>Test if Trustee HotLine option is present</span>
+						<span class='test-time'>Mar 17, 2022 03:22:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='60' status='pass'>
+	<span class='duration right label'>0h 0m 0s+301ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">To verify if Hotline number option is present</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='61' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='62' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User must be able to view the Hotline number option</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='63'>
+					<div class='test-heading'>
+						<span class='test-name'>Test MyChart navigation icon is present</span>
+						<span class='test-time'>Mar 17, 2022 03:22:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='64' status='pass'>
+	<span class='duration right label'>0h 0m 0s+309ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">To test if the Mychart Icon is available</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='65' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is already on Hompage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='66' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User must be able to verify the Mychart Icon</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>Test wait times with wait time API's</span>
+						<span class='test-time'>Mar 17, 2022 03:22:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='68' status='pass'>
+	<span class='duration right label'>0h 0m 2s+447ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">To Test wait time API</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='69' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given The user is already on the Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='70' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And The user clicks on Waittime button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='71' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then The user must be able to see the waittime which matches the waittime API</span>
+				<div class='pre'>passed</div>
+			
 		</li>
 	</ul>
 </div>
@@ -339,14 +731,14 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Regression1</span>
+						<span class='category-name'>@Regression</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label pass'>15</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label green accent-4 white-text'>Passed: 15</span>
 							
 							
 						</div>
@@ -362,18 +754,78 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 15, 2022 03:46:33 PM</td>
+										<td>Mar 17, 2022 03:20:56 PM</td>
 										<td class='linked' test-id='1'>Test FAM API Integration</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 15, 2022 03:46:45 PM</td>
-										<td class='linked' test-id='6'>Test login Functionality</td>
+										<td>Mar 17, 2022 03:21:07 PM</td>
+										<td class='linked' test-id='6'>Test Password Help Functionality</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 15, 2022 03:46:45 PM</td>
-										<td class='linked' test-id='8'>Test login Functionality.To Test Login Functionality with valid credentials.To Test Login Functionality with valid credentials</td>
+										<td>Mar 17, 2022 03:21:07 PM</td>
+										<td class='linked' test-id='8'>Test Password Help Functionality.Test Password reset.Test Password reset</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:22 PM</td>
+										<td class='linked' test-id='14'>Test Password Help feature for an invalid user</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:22 PM</td>
+										<td class='linked' test-id='16'>Test Password Help feature for an invalid user.To Test Invalid users get proper error message during Password reset.To Test Invalid users get proper error message during Password reset</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:27 PM</td>
+										<td class='linked' test-id='22'>Test whether an invalid user is unable to login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:27 PM</td>
+										<td class='linked' test-id='24'>Test whether an invalid user is unable to login.To Test if an unregisterd user gets a proper error message when logging in.To Test if an unregisterd user gets a proper error message when logging in</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:31 PM</td>
+										<td class='linked' test-id='30'>Test login Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:31 PM</td>
+										<td class='linked' test-id='32'>Test login Functionality.To Test Login Functionality with valid credentials.To Test Login Functionality with valid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:54 PM</td>
+										<td class='linked' test-id='40'>To Test the emergency notification submission</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:21:54 PM</td>
+										<td class='linked' test-id='42'>To Test the emergency notification submission.Test Emergency Notification submission.Test Emergency Notification submission</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:22:12 PM</td>
+										<td class='linked' test-id='54'>Test Hospital to Hospital transfer</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:22:14 PM</td>
+										<td class='linked' test-id='59'>Test if Trustee HotLine option is present</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:22:14 PM</td>
+										<td class='linked' test-id='63'>Test MyChart navigation icon is present</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 17, 2022 03:22:15 PM</td>
+										<td class='linked' test-id='67'>Test wait times with wait time API's</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -402,37 +854,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
-					<div class='panel-lead'>2</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>10</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>46</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 15, 2022 03:46:33 PM</div>
+					<div class='panel-lead'>Mar 17, 2022 03:20:56 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 15, 2022 03:47:08 PM</div>
+			 		<div class='panel-lead'>Mar 17, 2022 03:22:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>35,538ms</div>
+					<div class='panel-lead'>82,136ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -448,8 +900,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Regression1</td>
-							<td>3</td>
+							<td>@Regression</td>
+							<td>15</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -469,7 +921,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 10,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -477,7 +929,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 10,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -486,7 +938,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 10,
+				passGrandChild: 46,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
